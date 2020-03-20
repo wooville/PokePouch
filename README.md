@@ -13,4 +13,8 @@ We check our database just to make sure that it works:
 ![](https://i.imgur.com/5AGs1l3.png)
 
 # Starting Login Activity
-Now that our fundamentals are set, I'd like to begin working on a simple XML layout for my login screen. 
+Now that our fundamentals are set, I'd like to begin working on a simple XML layout for my login screen. Using a linear layout, I ended up with something like this:
+
+![insert screenshot here]()
+
+Now, obviously, this page has no functionality yet, so I'll head to the activity's class and start working on integrating it into the Firebase.
