@@ -2,9 +2,9 @@
 PokePouch is a Pokemon collection app for Android making use of PokeAPI. This readme exists for the purpose of documenting my programming process.
 
 # Getting Started
-The purpose of this app is to provide a way for users to track their Pokemon collections in a mobile format. Collections will be tied to an account, the contents of which will be stored using Firebase. After creating a new project in Android Studio, I need to add dependencies and setup my Firebase.
+The purpose of this app is to provide a way for users to track their Pokemon collections in a mobile format. A collection is represented by the Pokemon that have been captured by the player out of the entirety of the Pokedex. Collections will be tied to an account, the contents of which will be stored using Firebase. After creating a new project in Android Studio, I need to add dependencies and setup my Firebase.
 
-For dependencies, I'll be using sargunv's [PokeKotlin](https://github.com/PokeAPI/pokekotlin), which is a Java/Kotlin wrapper for PokeAPI. I add its dependencies to my build.gradle, as well as Firebase's dependencies for authentication, analytics and database. After creating a Firebase for this app and adding a database, we run some simple test code to add to our database:
+For dependencies, I'll be using sargunv's [PokeKotlin](https://github.com/PokeAPI/pokekotlin), which is a Java/Kotlin wrapper for PokeAPI. I add its dependencies to my build.gradle, as well as Firebase's dependencies for authentication, analytics and database. Finally, I'll need Glide to grab the sprites for the Pokemon from the PokeAPI website, since they're hosted separately from the rest of the API. After creating a Firebase for this app and adding a database, we run some simple test code to add to our database:
 
 ![](https://i.imgur.com/2V5yJ6f.png)
 
