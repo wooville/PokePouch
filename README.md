@@ -12,9 +12,31 @@ We check our database just to make sure that it works:
 
 ![](https://i.imgur.com/5AGs1l3.png)
 
-# Starting Login Activity
-Now that our fundamentals are set, I'd like to begin working on a simple XML layout for my login screen. Using a linear layout, I ended up with something like this:
+# Login and Register Activities
+Now that our fundamentals are set, I'd like to begin working on some simple XML layouts for my login and registration screens. Using a linear layout, I end up with something like this:
 
-![insert screenshot here]()
+![](https://i.imgur.com/bCc9cFl.png)
+![](https://i.imgur.com/8Ua4jN7.png)
 
-Now, obviously, this page has no functionality yet, so I'll head to the activity's class and start working on integrating it into the Firebase.
+Now, obviously, these pages have no functionality yet, so I'll head to the activity classes and start working on integrating it into the Firebase. Before I do that, though, I make sure to add my registration activity to the manifest, add a check to ensure they fill out the registration page correctly (using regex expressions for email and password validation), and link the two activities via Intents.
+
+Once the validation is taken care of, I just need to create a user on my Firebase once they hit the register button (assuming their information adheres to the required format). Adding a user is as simple as creating an instance of the Firebase authenticator class, passing the email and password, and adding an onComplete listener to check if it was successful or not. Registration is done! Now time to make sure that the user is created by checking Firebase:
+
+![](https://i.imgur.com/ihLlMrt.png)
+
+We can see that the user is added. Now all we need to do is check in with Firebase when a user tries to sign in and send them to a new activity when it goes through, which amounts to just a couple lines of code:
+
+![code]()
+
+Finally, we ensure that the app just sends the user to the next activity if they're already logged in, which is even simpler.
+
+![code2]()
+
+# The Pouch Itself
+Our login and register activities are working, and we're almost ready for the meat of the app itself. But first, we need to make sure that the user can sign out. We start by creating a new activity, the Pouch of PokePouch. We create a menu item to allow the user to log out, then add it to our new Pouch activity. We also want to listen for when it's being tapped.
+
+![](https://i.imgur.com/PopqPdO.png)
+![](https://i.imgur.com/uWaKQF6.png)
+
+
+
