@@ -52,6 +52,14 @@ Heading back to our Pouch, we setup our RetroFit and begin working on our Recycl
 ![](https://i.imgur.com/EMKkumN.png)
 ![](https://i.imgur.com/hMqltBm.png)
 
-We want our RetroFit setup to stream data directly into the RecyclerView adapter, so let's set that up first.
+We want our RetroFit setup to stream data directly into the RecyclerView adapter, so let's set that up first. Pretty standard setup, except we want to 1) grab the sprite for each item with Glide and 2) store our user's collection into our Firebase (and update accordingly).
 
-![]()
+![](https://i.imgur.com/Q0IuUcE.png)
+![](https://i.imgur.com/h9kjcq2.png)
+
+We're almost there. We just need to check when our database changes, then consume the info we want from PokeAPI with RetroFit and pass it to our adapter.
+
+![](https://i.imgur.com/q3jGrGN.png)
+![](https://i.imgur.com/KlolNi5.png)
+
+And that's it!
