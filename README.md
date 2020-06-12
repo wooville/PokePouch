@@ -62,7 +62,7 @@ We're almost there. We just need to check when our database changes, then consum
 ![](https://i.imgur.com/q3jGrGN.png)
 ![](https://i.imgur.com/KlolNi5.png)
 
-And that's it!
+And that's it! [Here's a video of it in action!](https://www.youtube.com/watch?v=Y5aGoRC0zlo)
 
 # Improvements
 There are so many ways the expand upon this idea. You could flesh out the collection aspect a lot, for starters (pun intended). PokeAPI also has a ton more information on it, and you could go way more in depth with all of that as well, not to mention putting a bigger focus on the frontend. Unfortunately, these are all ideas that I was unable to execute upon in the given timeframe.
